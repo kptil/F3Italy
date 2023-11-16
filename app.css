@@ -46,21 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*
-body {
-    /*
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    
-}*/
 
 .runners {
-    background-image: url("images/runners.png");
+    background-image: url("images/runners-sm.png");
     box-shadow: inset 0px 0px 50px 50px #212529;
     width: 90%;
-    height: 600px;
+    height: 500px;
 }
 
 .header {
@@ -75,7 +66,22 @@ body {
     font-size: 25px;
 }
 
-@media(min-width: 1100px) {
+@media(min-width: 550px) {
+    .runners {
+        background-image: url("images/runners-md.png");
+        height: 600px;
+    }
+}
+
+
+@media(min-width: 1000px) {
+    .runners {
+        background-image: url("images/runners.png");
+        height: 600px;
+    }
+}
+
+@media(min-width: 1200px) {
     .header {
         font-size: 6em;
     }
@@ -90,9 +96,6 @@ body {
     }
 }
 
-/*bootstrap dark color: #212529
-full size runners image: 1300px by 900px
-full size header text: 6em
-*/
+/*bootstrap dark color: #212529*/
 
 
