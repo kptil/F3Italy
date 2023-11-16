@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-.runners {
+#runners {
     background-image: url("images/runners-sm.png");
     box-shadow: inset 0px 0px 50px 50px #212529;
     width: 90%;
@@ -66,8 +66,27 @@ table {
     font-size: 25px;
 }
 
+#footer {
+    background-color: #14171A;
+    width: 100%;
+}
+
+.ft-link {
+    text-decoration: none;
+    color: #F8F9FA;
+}
+
+a.ft-link:hover {
+    text-decoration: underline;
+}
+
+.ft-img {
+    width: 50px;
+    height: 50px;
+}
+
 @media(min-width: 550px) {
-    .runners {
+    #runners {
         background-image: url("images/runners-md.png");
         height: 600px;
     }
@@ -75,7 +94,7 @@ table {
 
 
 @media(min-width: 1000px) {
-    .runners {
+    #runners {
         background-image: url("images/runners.png");
         height: 600px;
     }
