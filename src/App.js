@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>F3 Italy</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="app.css">
-    <script src="https://kit.fontawesome.com/a884f2df98.js" crossorigin="anonymous"></script>
-  </head>
+import './App.css';
+import f3logo from './images/f3-logo-light.png';
+import map from './images/map.png';
+import f3vicenza from './images/f3-vicenza.png';
+import slacklogo from './images/slack.png';
+import walogo from './images/whatsapp-icon.png';
+import fblogo from './images/fb-icon.png';
 
-  <body class="bg-dark text-white">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+function App() {
+  return (
+    <div class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand fs-2" href="#">
-            <img src="images/f3-logo-light.png" alt="F3 Icon" width="40" height="40" class="d-inline-block align-text-top">
+            <img src={f3logo} alt="F3 Icon" width="40" height="40" class="d-inline-block align-text-top"/>
             Italy - Vicenza
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +41,7 @@
 
     <div id="location" class="container mt-5">
         <p class="subheader text-center mb-3">'The Garrison' AO</p>
-        <img src="images/map.png" class="img-fluid mx-auto d-block">
+        <img src={map} class="img-fluid mx-auto d-block"/>
         <p class="textHighlight text-center h4 mt-3">Bootcamp Workouts</p>
         <p class="text text-center">Every Wednesday @ 0530</p>
         <p class="text text-center mt-2">Meet at the South East Corner of the Ederle Track on Caserma Ederle</p>
@@ -77,18 +76,17 @@
             <p class="mb-2"><a class="ft-link" href="https://f3nation.com/" target="_blank">Learn more about F3 Nation</a></p>
           </div>
           <div class="col-4 my-5">
-            <a href="https://f3nation.com/" target="_blank"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src="images/f3-logo-light.png"></a>
-            <a href="mailto:info@f3italy.com"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src="images/f3-vicenza.png"></a>
-            <a href="https://f3nation.slack.com/team/U040NL0L0G5"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src="images/slack.png"></a>
-            <a href="https://wa.me/12102864205"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src="images/whatsapp-icon.png"></a>
-            <a href="https://www.facebook.com/profile.php?id=61551343644693"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src="images/fb-icon.png"></a>
+            <a href="https://f3nation.com/" target="_blank"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src={f3logo}/></a>
+            <a href="mailto:info@f3italy.com"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src={f3vicenza}/></a>
+            <a href="https://f3nation.slack.com/team/U040NL0L0G5"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src={slacklogo}/></a>
+            <a href="https://wa.me/12102864205"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src={walogo}/></a>
+            <a href="https://www.facebook.com/profile.php?id=61551343644693"><img class="img-fluid rounded-circle ft-img me-3 mb-2" src={fblogo}/></a>
           </div> 
         </div> 
       </div>
     </div>
+    </div>
+  );
+}
 
-    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
-  </body>
-</html>
+export default App;
