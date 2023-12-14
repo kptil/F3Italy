@@ -6,6 +6,7 @@ import f3vicenza from './images/f3-vicenza.png';
 import slacklogo from './images/slack.png';
 import walogo from './images/whatsapp-icon.png';
 import fblogo from './images/fb-icon.png';
+import { Timeline } from 'react-twitter-widgets';
 
 
 function App() {
@@ -95,9 +96,19 @@ function App() {
         </div>
       </div>
 
-      <div class="row justify-content-center my-4">
-        <div class="col-6 text-center">
-          <iframe width="600" height="420" src="https://www.youtube.com/embed/rGo03Y1ZZ3I"></iframe>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="iframe-container">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/rGo03Y1ZZ3I"></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-3">
+            <Timeline 
+              dataSource={{sourceType: 'profile', screenName: 'F3_Italy'}}
+              options={{height: '450'}}
+            />
+          </div>
         </div>
       </div>
       
