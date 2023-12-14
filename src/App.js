@@ -55,8 +55,52 @@ function App() {
     </div>
     
     <div id="about" class="container mt-5">
-        <p class="subheader text-center">The Core Principles of F3</p>
+      <p class="subheader text-center mb-4">The Core Principles of F3</p>
+      <p class="h5 text-center">The Mission of F3 is to plant, grow, and serve small workout groups for the 
+          invigoration of male community leadership. </p>
+      <p class="h4 my-4 text-center it">"Leave no man behind, but leave no man where you found him."</p>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="row justify-content-center text-center"><i class="fa-solid fa-dollar-sign icon"></i></div>
+              <div class="row text-center mt-3"><p class="h5">Always Free</p></div>
+            </div>
+            <div class="col">
+              <div class="row justify-content-center text-center"><i class="fa-solid fa-people-group icon"></i></div>
+              <div class="row text-center mt-3"><p class="h5">Open to All Men</p></div>
+            </div>
+            <div class="col">
+              <div class="row justify-content-center text-center"><i class="fa-solid fa-cloud-sun-rain icon"></i></div>
+              <div class="row text-center mt-3"><p class="h5">Held Outdoors</p></div>
+            </div>
+            <div class="col">
+              <div class="row justify-content-center text-center"><i class="fa-solid fa-street-view icon"></i></div>
+              <div class="row text-center mt-3"><p class="h5">Peer Led</p></div>
+            </div>
+            <div class="col">
+              <div class="row justify-content-center text-center"><i class="fa-regular fa-life-ring icon"></i></div>
+              <div class="row text-center mt-3"><p class="h5">Circle of Trust</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row justify-content-center mt-3">
+        <div class="col-10">
+          <p class="h5 text-center">There is no physical fitness requirement for F3, so don't tell yourself you need to get in shape first!
+            Come as you are, all shapes and sizes welcome. You'll grow stronger and faster in time. It's never easy,
+            but it's always worth it.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-4">
+        <div class="col-6 text-center">
+          <iframe width="600" height="420" src="https://www.youtube.com/embed/rGo03Y1ZZ3I"></iframe>
+        </div>
+      </div>
+      
     </div>
 
     <div id="footer" class="mt-5">
